@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+:root{
+  --color1: #054672;
+  --color2: #FFC40B;
+  --color3: #02A302;
+  --color4: #EFF1F5;
+
+  --borde-boton: 10px;
+
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color4);
+  overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover{
+    color: #565353;
+  }
+#header {
+  /* background: rgba(0, 0, 0, 0.6); */
+
+  background: var(--color1);
+  backdrop-filter: blur(10px);
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  color: #FFFFFF;
+  padding:  0px 13px 0px 13px;  
+}
+
+.contenedor-header{
+  height: 60px;
+}
+
+.icono-menu{
+  font-size: 25px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+.btn-admin{
+  color: #FFFFFF;
+}
+
+#contenedorSlider{
+  padding-top: 80px;
+}
+
+/* estilos card recuerdos */
+.recuerdos{
+  /* border: solid 1px rgba(0, 0, 0, 0.3); */
+  background: #FFFFFF;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 5px 5px;
+  border-radius: 5px;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 200px;
+  height: 330px;
+  justify-content: center;
+  position: relative;
+}
