@@ -1,0 +1,7 @@
+# Archivos a ignorar al subir a la repo de git
+
+# Modulos de node
+node_modules
+
+# Archivos de desarrollo .env
+.env

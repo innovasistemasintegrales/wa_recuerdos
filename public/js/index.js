@@ -10,10 +10,10 @@ const templateSlider = document.querySelector('#templateSlider').content;
 
 let listadoGeneralSlider = {};
 
-/* socket.on('/index/listarSliders', (data)=>{
+socket.on('/index/listarSliders', (data)=>{
     listadoGeneralSlider = data;  
     listarSlider() 
-}) */
+})
 
 function listarSlider() {
     contenedorSlider.innerHTML = "";
