@@ -1,4 +1,3 @@
-/* Este archivo sirve para configurar el servidor o la aplicación*/
 const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
@@ -8,34 +7,40 @@ const bodyParser = require('body-parser');
 const app = express();
 
 /* SETTINGS */
-app.set('port', process.env.PORT || 2000);// Si es que existe un puerto definido para la app usalo, sino por defecto usa 4000
-app.set('views', path.join(__dirname, 'views'));// Node sabe la ruta completa de esa carpeta.
+app.set('port', process.env.PORT || 2000);
+app.set('views', path.join(__dirname, 'views'));
 
-//Establecemos y configuramos el motor de plantillas.
-app.engine('.hbs', exphbs.create({
+// Crear instancia de Handlebars y registrar el helper
+const hbs = exphbs.create({
+    extname: 'hbs',
     defaultLayout: 'main',
-    extname: '.hbs'
-}).engine);
+    layoutsDir: __dirname + '/views/layouts',
+    partialsDir: __dirname + '/views/partials',
+    helpers: {
+        eq: function (a, b) {
+            return a === b;
+        },
+    },
+});
 
-app.set('view engine', '.hbs'); //Usa el motor que se cofiguro anteriormente.
+// Establecer el motor de plantillas
+app.engine('.hbs', hbs.engine);
+app.set('view engine', '.hbs');
 
-/* MIDELWARE */
-app.use(morgan('dev')); //Utilizamos el modulo de morgan
-app.use(express.urlencoded({extended: true})); //Acepta los datos de un formulario HTML
-
-/* ROUTERS */
-//Utilizamos las rutas definidas en la carpeta router
+/* MIDDLEWARE */
+app.use(morgan('dev'));
+app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
+
+/* ROUTERS */
 app.use(require('./routes/routes'));
 
 /* STATIC FILES */
-//Indicamos donde estan archivos públicos.
 app.use(express.static(path.join(__dirname, 'public')));
 
 /* CONFIGURATION */
-//Definimos maximo de peso de json
-app.use(express.json({limit: '200mb'}));
+app.use(express.json({ limit: '200mb' }));
 
 module.exports = app;

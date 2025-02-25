@@ -1,7 +1,27 @@
 # Archivos a ignorar al subir a la repo de git
 
+# Configuracion de VSC
+.vscode/
+
 # Modulos de node
-node_modules
+node_modules/
 
 # Archivos de desarrollo .env
 .env
+
+# Docker Compose
+docker-compose.yml
+
+# Configuracion Servidor nginx
+nginx.conf
+
+# Carpeta espejo de nginx
+uploads/
+
+# Omitir scripts de SQL
+db_creation.sql
+db_insert.sql
+
+
+# Configuracion de prettier
+.prettierrc

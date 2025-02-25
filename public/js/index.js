@@ -16,7 +16,7 @@ socket.on('/index/listarSliders', (data)=>{
 })
 
 function listarSlider() {
-    contenedorSlider.innerHTML = "";
+    conten 
 
     let slider = listadoGeneralSlider;
 

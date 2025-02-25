@@ -1,0 +1,364 @@
+{{! Este es mi galeria de usuario }}
+<div class='contenedor-mi-galeria container bg-white'>
+    <div id='contenedorOrganizar' class='contenedor-organizar row d-flex flex-row align-items-center p-2'>
+        <div class='col-6'>
+            <span class='texto-organizar text-white fs-5 fw-semibold'>
+                Organizar
+            </span>
+        </div>
+
+        <div class='filtro-busqueda col-6 d-flex flex-row align-items-center justify-content-end gap-2'>
+            <button class='btn btn-filtrar' type='button'>
+                <i class='bi bi-funnel-fill'></i>
+            </button>
+
+            <input type='search' class='caja-buscar' placeholder='Buscar...' aria-label='Buscar' />
+            <button class='btn btn-buscar' type='button'>
+                <i class='bi bi-search'></i>
+            </button>
+            <button class='btn btn-agregar-archivo text-white' type='button'>
+                <i class='bi bi-plus-lg'></i>
+            </button>
+        </div>
+    </div>
+
+    <div class='contenedor-informacion p-2 py-3 d-flex align-items-center justify-content-between'>
+        <span class='nombre-galeria fs-5 fw-semibold'>
+            Mi Galeria
+        </span>
+        <span class='contador-galeria fs-5 fw-semibold'>
+            98 Elementos
+        </span>
+    </div>
+
+    <div class='contenedor-galeria-archivos container'>
+        <div class='row d-flex flex-wrap justify-content-center align-items-center gap-3'>
+            <!-- Aquí van los elementos de los archivos que pueden ser generados dinámicamente con un bucle -->
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-archivo rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-archivo'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-extension'>
+                            <i class='bi bi-filetype-png'></i>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar'>
+                            <i class='bi bi-arrow-down'></i>
+                        </button>
+                        <img src='img/portada-archivo-0.jpg' alt='mi-archivo' />
+                    </div>
+                    <p class='nombre-archivo mt-3 text-center fw-semibold'>
+                        Nombre imagen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

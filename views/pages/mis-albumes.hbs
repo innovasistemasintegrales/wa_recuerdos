@@ -1,0 +1,184 @@
+{{! Este es mis-albumes de usuario }}
+<div class='contenedor-mis-albumes container bg-white'>
+    <div class='contenedor-organizar row d-flex flex-row align-items-center p-2'>
+        <div class='col-6'>
+            <span class='texto-organizar text-white fs-5 fw-semibold'>
+                Organizar
+            </span>
+        </div>
+
+        <div class='filtro-busqueda col-6 d-flex flex-row align-items-center justify-content-end gap-2'>
+            <button class='btn btn-filtrar' type='button'>
+                <i class='bi bi-funnel-fill'></i>
+            </button>
+
+            <input type='search' class='caja-buscar' placeholder='Buscar...' aria-label='Buscar' />
+            <button class='btn btn-buscar' type='button'>
+                <i class='bi bi-search'></i>
+            </button>
+            <button id='botonCrearAlbum' class='btn btn-crear-album text-white' type='button'>
+                <i class='bi bi-plus-lg'></i>
+            </button>
+        </div>
+    </div>
+
+    <div class='contenedor-informacion p-2 py-3 d-flex align-items-center justify-content-between'>
+        <span class='nombre-album fs-5 fw-semibold'>
+            Mis Albumes
+        </span>
+        <span class='contador-album fs-5 fw-semibold'>
+            2 Albumes
+        </span>
+    </div>
+
+    <div class='contenedor-galeria-albumes container'>
+        <div class='row d-flex flex-wrap justify-content-center align-items-center gap-3'>
+            <!-- Aquí van los elementos de los archivos que pueden ser generados dinámicamente con un bucle -->
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-album rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-album'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-numero-elementos'>
+                            <span class='fs-6'>
+                                99
+                            </span>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar-zip'>
+                            <i class='bi bi-file-zip-fill'></i>
+                        </button>
+                        <div class='caja-icono-album d-flex align-items-center justify-content-center'>
+                            <i class='icono-album bi bi-folder-fill'></i>
+                        </div>
+                    </div>
+                    <p class='nombre-album mt-3 text-center fw-semibold'>
+                        Viaje familiar
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-album rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-album'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-numero-elementos'>
+                            <span class='fs-6'>
+                                99
+                            </span>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar-zip'>
+                            <i class='bi bi-file-zip-fill'></i>
+                        </button>
+                        <div class='caja-icono-album d-flex align-items-center justify-content-center'>
+                            <i class='icono-album bi bi-folder-fill'></i>
+                        </div>
+                    </div>
+                    <p class='nombre-album mt-3 text-center fw-semibold'>
+                        Viaje familiar
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-album rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-album'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-numero-elementos'>
+                            <span class='fs-6'>
+                                99
+                            </span>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar-zip'>
+                            <i class='bi bi-file-zip-fill'></i>
+                        </button>
+                        <div class='caja-icono-album d-flex align-items-center justify-content-center'>
+                            <i class='icono-album bi bi-folder-fill'></i>
+                        </div>
+                    </div>
+                    <p class='nombre-album mt-3 text-center fw-semibold'>
+                        Viaje familiar
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-album rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-album'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-numero-elementos'>
+                            <span class='fs-6'>
+                                99
+                            </span>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar-zip'>
+                            <i class='bi bi-file-zip-fill'></i>
+                        </button>
+                        <div class='caja-icono-album d-flex align-items-center justify-content-center'>
+                            <i class='icono-album bi bi-folder-fill'></i>
+                        </div>
+                    </div>
+                    <p class='nombre-album mt-3 text-center fw-semibold'>
+                        Viaje familiar
+                    </p>
+                </div>
+            </div>
+
+            <div class='col-auto p-2'>
+                <div class='contenedor-album rounded overflow-hidden d-flex flex-column'>
+                    <!-- Portada del archivo -->
+                    <div class='portada-album'>
+                        <!-- Botones de archivo -->
+                        <button class='boton-icono boton-numero-elementos'>
+                            <span class='fs-6'>
+                                99
+                            </span>
+                        </button>
+                        <button class='boton-icono boton-privacidad'>
+                            <i class='bi bi-lock-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-eliminar'>
+                            <i class='bi bi-trash-fill'></i>
+                        </button>
+                        <button class='boton-icono boton-descargar-zip'>
+                            <i class='bi bi-file-zip-fill'></i>
+                        </button>
+                        <div class='caja-icono-album d-flex align-items-center justify-content-center'>
+                            <i class='icono-album bi bi-folder-fill'></i>
+                        </div>
+                    </div>
+                    <p class='nombre-album mt-3 text-center fw-semibold'>
+                        Viaje familiar
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,22 +1,22 @@
-/* Configuracion de conexion de DB */
-/* import mysql from 'mysql'; */
+// Configuracion de conexion de DB
+
+// Importar modulo mysql
 var mysql = require('mysql2');
 
-var db = mysql.createConnection({
-    host: 'localhost',
-    database: 'db_avisos_innova',
-    user: 'root',
-    password: '',
-})
+// Importar datos de la DB
+const { db } = require('./config.js');
 
-db.connect((err) =>{
-    if (err) {
-        console.error('Error al conectar la base de datos', err);
-        throw err;        
+// Creamos la conexion a la database
+const connection = mysql.createConnection(db);
+
+// Intentamos connectar a la database
+connection.connect((error) => {
+    if (error) {
+        console.log('Error al conectar la base de datos: ' + error.message);
+        throw error;
     }
-    console.log('Conexión a base de datos exitosa');
-    
-})
 
+    console.log('Conexion a la base de datos exitosa');
+});
 
-module.exports = db;
+module.exports = connection;
