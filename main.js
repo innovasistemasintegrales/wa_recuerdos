@@ -8,18 +8,30 @@ const socketIO = require('socket.io');
 /* const db = require('express-myconnection'); */
 const io = socketIO(server);
 
-io.of('/index').on('connection', (socket)=>{
-    /* Listar avisos */
-    db.query('SELECT * from anuncios',(err, results) =>{
+io.of('/index').on('connection', async(socket)=>{
+
+    await db.query('SELECT * from usuarios',(err, results) =>{
         if (err) {
             console.error('Error en la consulta:', err);
         }
-        let listadoGeneralAnuncios
+        let listadoGeneralUsuarios
         for (let i = 0; i < results.length; i++) {
-            listadoGeneralAnuncios = results[i];
+            listadoGeneralUsuarios = results[i];
         }
         
-        io.of('/index').to(socket.id).emit('/index/listarAnuncios', listadoGeneralAnuncios);
+        io.of('/index').to(socket.id).emit('/index/listarUsuarios', listadoGeneralUsuarios);
+    })
+    /* Listar avisos */
+    db.query('SELECT * from usuarios',(err, results) =>{
+        if (err) {
+            console.error('Error en la consulta:', err);
+        }
+        let listadoGeneralUsuarios
+        for (let i = 0; i < results.length; i++) {
+            listadoGeneralUsuarios = results[i];
+        }
+        
+        io.of('/index').to(socket.id).emit('/index/listarUsuarios', listadoGeneralUsuarios);
     })
 
     /* Editar avisos */

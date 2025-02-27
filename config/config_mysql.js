@@ -4,7 +4,7 @@ var mysql = require('mysql2');
 
 var db = mysql.createConnection({
     host: 'localhost',
-    database: 'db_avisos_innova',
+    database: 'db_recuerdo',
     user: 'root',
     password: '',
 })

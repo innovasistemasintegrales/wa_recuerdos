@@ -9,11 +9,13 @@ let contenedorSlider = document.querySelector('#contenedorSlider');
 const templateSlider = document.querySelector('#templateSlider').content;
 
 let listadoGeneralSlider = {};
+let listadoGeneralUsuarios = {};
 
-/* socket.on('/index/listarSliders', (data)=>{
-    listadoGeneralSlider = data;  
-    listarSlider() 
-}) */
+socket.on('/index/listarUsuarios', (data)=>{
+    listadoGeneralUsuarios = data;  
+    console.log(listadoGeneralUsuarios);
+    
+})
 
 function listarSlider() {
     contenedorSlider.innerHTML = "";
