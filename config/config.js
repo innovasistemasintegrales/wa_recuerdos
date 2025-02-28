@@ -12,7 +12,7 @@ const config = {
         salRounds: parseInt(process.env.SALT_ROUNDS, 10),
     },
 
-    db: {
+    database: {
         host: process.env.DB_HOST,
         port: parseInt(process.env.DB_PORT, 10) || 3306,
         database: process.env.DB_NAME,

@@ -22,6 +22,5 @@ uploads/
 db_creation.sql
 db_insert.sql
 
-
 # Configuracion de prettier
 .prettierrc

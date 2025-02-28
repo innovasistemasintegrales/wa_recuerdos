@@ -1,0 +1,155 @@
+<div>
+    <section id="seccionMenu">
+        <div id="sideMenu" class="menu-colapsado">
+            {{!-- Header --}}
+            <div id="cabecera">
+                <div id="titulo"><span>APP DE RECUERDOS</span></div>
+                <div id="menuBtn">
+                    <div class="btn-hamburger"></div>
+                    <div class="btn-hamburger"></div>
+                    <div class="btn-hamburger"></div>
+                </div>
+            </div>
+            {{!-- Perfil --}}
+            <div id="perfil">
+                <div id="foto"><img src="/img/perfil.png" alt="" ></div>
+                <div id="nombre"><span>Administrador</span></div>
+            </div>
+            {{!-- Items --}}
+            <div id="menuItems">
+                <div class="item">
+                    <a href="#" id="btnMenuContactos">
+                        <div class="icono"><img src="/icons/usuarios.png" alt="" ></div>
+                        <div class="titulo"><span>Contactos</span></div>
+                    </a>
+                </div>
+                <div class="item-separator">
+                </div>
+                <div class="item">
+                    <a href="#" id="btnMenuGaleria">
+                        <div class="icono"><img src="/icons/asesoria.png" alt="" ></div>
+                        <div class="titulo"><span>Mi galeria</span></div>
+                    </a>
+                </div>
+                <div class="item-separator">
+                </div>
+                <div class="item">
+                    <a href="#" id="btnMenuAlbum">
+                        <div class="icono"><img src="/icons/asesoria.png" alt="" ></div>
+                        <div class="titulo"><span>Mis albumes</span></div>
+                    </a>
+                </div>
+                <div class="item-separator">
+                </div>
+                <div class="item">
+                    <a href="#" id="btnMenuNotificacion">
+                        <div class="icono"><img src="/icons/asesoria.png" alt="" ></div>
+                        <div class="titulo"><span>Notificaciones</span></div>
+                    </a>
+                </div>
+                <div class="item-separator">
+                </div>
+                <div class="item">
+                    <a href="#" id="btnMenuConfiguracion">
+                        <div class="icono"><img src="/icons/configuracion.png" alt="" ></div>
+                        <div class="titulo"><span>Configuración</span></div>
+                    </a>
+                </div>
+                <div class="item-separator">
+                </div>
+                <div class="item">
+                    <a href="#" id="btnMenuCerrar">
+                        <div class="icono"><img src="/icons/cerrar.png" alt="" ></div>
+                        <div class="titulo"><span>Cerrar Sesion</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contenedorPrincipal">
+        <div class="row">
+            <div class="col">
+                {{!-- Card Global reactivo --}}
+                <div id="contenedorReactivo">
+                    {{!-- Aqui va todo el contenido iniciar y los reactivos --}}
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img  src="https://i2.wp.com/factoriayuguero.com/wp-content/uploads/2019/07/slider-recuerdos-copia.jpg?resize=1024%2C358&ssl=1" class="d-block w-100 img-slider1" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ytimg.com/vi/dsq_4o3UKT8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGFogSyhlMA8=&rs=AOn4CLAavhbst5VrtZSsGaJsTuouJ-Ii2A" class="d-block w-100 img-slider2" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://lh5.googleusercontent.com/-9KqBk-sO35E/U0A3kOQE-0I/AAAAAAAAO10/ZaaJvnh7UpI/s1024/SLIDER%2520recuerdos%25202013.jpg" class="d-block w-100 img-slider3" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                 {{!-- Tempate del contenido Contactos --}}
+                 <template id="templateContactos">
+                    <div class="container">
+                        {{!-- Card contacto --}}
+                        <div class="contacto text-center">
+                            <span class="mis-contactos"></span>
+                            <div class="">
+                                <img src="" alt="" class="img-fluid img-contacto" width="150px" />
+                            </div>
+                            <div class="detalles">
+                                <div class="d-flex justify-content-center">
+                                    <div class=" fw-bold overNombreContacto">
+                                        <span class="nombre-contacto"></span>
+                                    </div>
+                                </div>
+                                <textarea name="" id="" class="descripcion-contacto form-control border-0" cols="10" rows="2" style="background-color: transparent;"  disabled ></textarea> 
+                                <div class="contPrecios d-flex justify-content-end">
+                                    <div class="text-center">
+                                        <span class="fw-bold precio-contacto-1"></span>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class=" fw-bold etiqueta-moneda">S/ </span><span class=" fw-bold precio-contacto-2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="oferta"></span>
+                            {{!-- <a class="text-white" href=""><span class="btn btn-agregar-carro border-2 rounded-pill text-center">Más Detalles</span></a> --}}
+                            <span class="mas-detalles" data-bs-toggle="modal" data-bs-target="#modalDetalles"></span>
+                        </div>
+                    </div>
+                 </template>
+
+                 {{!-- Tempate del contenido Mi galeria --}}
+                 <template id="templateGaleria">
+                    <div>
+                        <span class="text-black mi-galeria">Hola soy la seccion galeria</span>
+                    </div>
+                 </template>
+                 {{!-- Tempate del contenido Mi album --}}
+                 <template id="templateAlbum">
+                    <span class="text-black">Hola soy la seccion álbum</span>
+                 </template>
+                 {{!-- Tempate del contenido notificación --}}
+                 <template id="templateNotificacion">
+                    <span class="text-black">Hola soy la seccion Notificación</span>
+                 </template>
+                 {{!-- Tempate del contenido configuración --}}
+                 <template id="templateConfiguracion">
+                    <span class="text-black">Hola soy la seccion Configuración</span>
+                 </template>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="/js/administrador.js"></script>

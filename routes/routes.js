@@ -40,23 +40,110 @@ router.get('/login', (req, res) => {
 router.get('/administrador', (req, res) => {
     res.render('administrador');
 });
-// router.get('/amigo', (req, res) => {
-//   res.render('pages/amigo');
+
+// router.get('/mi-galeria', (req, res) => {
+//     res.render('pages/mi-galeria', {
+//         titulo: 'Mi Galeria',
+//         userName: 'Pepito',
+//         script: 'mi-cuenta',
+//     });
 // });
 
-router.get('/mi-galeria', (req, res) => {
-    res.render('pages/mi-galeria', {
-        titulo: 'Mi Galeria',
-        userName: 'Pepito',
-        script: 'mi-cuenta',
-    });
-});
+router.get('/amigo', (req, res) => {
+    const archivosEncontrados = [
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-0.jpg',
+            nombreImagen: 'Vista al mar',
+        },
+        {
+            extension: 'png',
+            privacidad: 'share-fill',
+            portada: 'img/portada-archivo-1.jpg',
+            nombreImagen: 'Un dia de playa',
+        },
+        {
+            extension: 'mp4',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-2.jpg',
+            nombreImagen: 'La familia',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+        {
+            extension: 'jpg',
+            privacidad: 'lock-fill',
+            portada: 'img/portada-archivo-3.jpg',
+            nombreImagen: 'Boda de amigos',
+        },
+    ];
 
-router.get('/mis-albumes', (req, res) => {
-    res.render('pages/mis-albumes', {
-        titulo: 'Mis Albumes',
+    const albumenEncontrados = [
+        {
+            elementosEnAlbum: '12',
+            privacidad: 'share-fill',
+            nombreAlbum: 'Una boda no mas',
+        },
+        {
+            elementosEnAlbum: '2',
+            privacidad: 'lock-fill',
+            nombreAlbum: 'Dia de playa',
+        },
+        {
+            elementosEnAlbum: '21',
+            privacidad: 'share-fill',
+            nombreAlbum: 'Fiesta del año',
+        },
+    ];
+
+    res.render('amigo', {
         userName: 'Pepito',
-        script: 'mi-cuenta',
+        totalArchivos: `${archivosEncontrados.length} ${archivosEncontrados.length === 0 || archivosEncontrados.length >= 2 ? ' Elementos' : ' Elemento'}`,
+        archivos: archivosEncontrados,
+
+        totalAlbumes: `${albumenEncontrados.length} ${albumenEncontrados.length === 0 || albumenEncontrados.length >= 2 ? ' Albumes' : ' Album'}`,
+        albumes: albumenEncontrados,
     });
 });
 
