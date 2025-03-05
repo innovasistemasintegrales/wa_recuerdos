@@ -1,8 +1,8 @@
 <div class="container vh-100 d-flex justify-content-center align-items-center">
     <div class="row w-100 d-flex justify-content-center align-items-center">
-        <div class="col-sm-8 col-md-4 col-lg-5 text-center mb-4">
+        <div class="col-sm-8 col-md-4 col-lg-5 text-center mb-4 d-none d-md-block">
             <div class="row d-flex justify-content-center align-items-center text-center">
-                <div class="col tex ">
+                <div class="col tex">
                     <h1 class="fw-bold title">BIENVENIDOS</h1>
                     <p class="fs-3 subtitle">"Reserva tus recuerdos, comparte tus historias"</p>
                 </div>
@@ -18,7 +18,7 @@
                         </div>
                         <h2 class="text-center text-color fs-3">Inicio de Sesión</h2>
 
-                        <div class="alert alert-danger" role="alert" id="error-message" style="display: none;">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert" id="error-message" style="display: none;">
                             Algo salió mal. Por favor, verifica tus datos.
                         </div>
                         <form>
@@ -26,6 +26,7 @@
                                 <div class="mb-3">
                                     <label for="usuario" class="fs-6">Usuario</label>
                                     <input type="text" class="form-control redondeado" id="usuario" placeholder="Ingresa tu usuario" required>
+                                    
                                 </div>
                                 <div class="mb-3">
                                     <label for="password" class="fs-6">Contraseña</label>
