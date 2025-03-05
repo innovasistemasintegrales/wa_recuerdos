@@ -1,5 +1,5 @@
 /* Scrip para frontend */
-const socket = io('/index');
+/* const socket = io('/index'); */
 
 
 const fragmento = document.createDocumentFragment();
