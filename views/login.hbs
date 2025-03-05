@@ -1,0 +1,90 @@
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="row w-100 d-flex justify-content-center align-items-center">
+        <div class="col-sm-8 col-md-4 col-lg-5 text-center mb-4">
+            <div class="row d-flex justify-content-center align-items-center text-center">
+                <div class="col tex ">
+                    <h1 class="fw-bold title">BIENVENIDOS</h1>
+                    <p class="fs-3 subtitle">"Reserva tus recuerdos, comparte tus historias"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-8 col-md-4 col-lg-4">
+            <div class="row d-flex justify-content-center align-items-center ">
+                 <div class="col-sm-8 col-md-4 col-lg-1">
+                    <div class="card p-4 shadow login-g">
+                        <div class="text-center mb-3 ">
+                            <img src="/img/logo-blanco.png" alt="Logo" class="img-fluid" width="190">
+                        </div>
+                        <h2 class="text-center text-color fs-3">Inicio de Sesión</h2>
+
+                        <div class="alert alert-danger" role="alert" id="error-message" style="display: none;">
+                            Algo salió mal. Por favor, verifica tus datos.
+                        </div>
+                        <form>
+                            <section id="Campos" class="text-color">
+                                <div class="mb-3">
+                                    <label for="usuario" class="fs-6">Usuario</label>
+                                    <input type="text" class="form-control redondeado" id="usuario" placeholder="Ingresa tu usuario" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="fs-6">Contraseña</label>
+                                    <input type="password" class="form-control redondeado" id="password" placeholder="Ingresa tu contraseña" required>
+                                </div>
+                            </section>
+                            <div class="text-center ">
+                                <button type="submit" class="btn-login redondeado">Iniciar sesión</button>
+                            </div>
+                        </form>
+                        <div class="text-center mt-3 text-color">
+                            <a href="#" class="text-color">¿Olvidaste tu contraseña?</a> | 
+                            <a href="#" class="text-color" data-bs-toggle="modal" data-bs-target="#registerModal">Registrate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-custom modal-dialog-scrollable">
+        <div class="modal-content modal-regist">
+            <div class="modal-header p-1">
+                <h5 class="modal-title col text-left mb-0" id="registerModalLabel">Registrate</h5>
+                <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="registerName" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control redondeado" id="registerName" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerNick" class="form-label">Nick</label>
+                        <input type="text" class="form-control redondeado" id="registerNick" placeholder="Ingresa tu Nick" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerEmail" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control redondeado" id="registerEmail" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerTelefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control redondeado" id="registerTelefono" placeholder="Ingresa tu teléfono" required pattern="\d{9}" maxlength="9">
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control redondeado" id="registerPassword" placeholder="Crear contraseña" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerConfirmPassword" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control redondeado" id="registerConfirmPassword" placeholder="Confirmar  contraseña" required>
+                    </div>
+                    <div class="text-right mt-2 border-top pt-2">
+                        <button type="submit" class="btn-login data-bs-target="#registerModal"">Iniciar Sesion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

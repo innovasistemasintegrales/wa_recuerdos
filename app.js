@@ -17,7 +17,7 @@ app.engine('.hbs', exphbs.create({
     extname: '.hbs'
 }).engine);
 
-app.set('view engine', '.hbs'); //Usa el motor que se cofiguro anteriormente.
+app.set('view engine', '.hbs'); //Usa el motor que se cofiguro anterior mente.
 
 /* MIDELWARE */
 app.use(morgan('dev')); //Utilizamos el modulo de morgan

@@ -10,7 +10,7 @@ const io = socketIO(server);
 
 io.of('/index').on('connection', (socket)=>{
     /* Listar avisos */
-    db.query('SELECT * from anuncios',(err, results) =>{
+    db.query('SELECT * from usuarios',(err, results) =>{
         if (err) {
             console.error('Error en la consulta:', err);
         }

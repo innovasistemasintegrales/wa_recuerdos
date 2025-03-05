@@ -20,8 +20,8 @@ function listarSlider() {
 
     let slider = listadoGeneralSlider;
 
-    let imagen1 = "https://i2.wp.com/factoriayuguero.com/wp-content/uploads/2019/07/slider-recuerdos-copia.jpg?resize=1024%2C358&ssl=1"
-    let imagen2 = "https://i.ytimg.com/vi/dsq_4o3UKT8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGFogSyhlMA8=&rs=AOn4CLAavhbst5VrtZSsGaJsTuouJ-Ii2A"
+    let imagen1 = "https://i.pinimg.com/736x/c1/8c/f5/c18cf5ea96b5f0004dfb3e06253a659d.jpg"
+    let imagen2 = "https://elements-resized.envatousercontent.com/elements-video-cover-images/files/319409258/Image-Photo-Memories-Ae-01.jpg?w=1600&cf_fit=cover&q=85&format=auto&s=39ef5c8f6b3a3da2361dd8fa023074c6e1192b9cf7c50d963df0b51f33e7c88a"
     let imagen3 = "https://lh5.googleusercontent.com/-9KqBk-sO35E/U0A3kOQE-0I/AAAAAAAAO10/ZaaJvnh7UpI/s1024/SLIDER%2520recuerdos%25202013.jpg"
 
     templateSlider.querySelector('.img-slider1').setAttribute("src", imagen1);
